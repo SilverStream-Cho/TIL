@@ -1,35 +1,36 @@
 # TIL 2023. 04. 17.
-* jekyllÀ» È°¿ëÇØ ³» local ÄÄÇ»ÅÍ¿¡ ±âº»ÀûÀÎ ºí·Î±× »ý¼ºÇÏ´Â ¹æ¹ýÀ» Âü°íÇÏ±â À§ÇØ ÀÛ¼ºÇÑ ±ÛÀÔ´Ï´Ù.
+> jekyllì„ í™œìš©í•´ ë‚´ local ì»´í“¨í„°ì— ê¸°ë³¸ì ì¸ ë¸”ë¡œê·¸ ìƒì„±í•˜ëŠ” ë°©ë²•ì„ ì°¸ê³ í•˜ê¸° ìœ„í•´ ìž‘ì„±í•œ ê¸€ìž…ë‹ˆë‹¤.
+>> jekyll: ë‚´ê°€ ì‹¤ì œ ìš´ì˜í•  ìˆ˜ ìžˆëŠ” ë¸”ë¡œê·¸ë¥¼ ìƒì„±í•´ì£¼ëŠ” í”„ë¡œê·¸ëž¨
 
->> jekyll: ³»°¡ ½ÇÁ¦ ¿î¿µÇÒ ¼ö ÀÖ´Â ºí·Î±×¸¦ »ý¼ºÇØÁÖ´Â ÇÁ·Î±×·¥
+---
+> ì™œ Jekyllì„ ì‚¬ìš©?
+* ì• ì´ˆì— css, html, JS í™œìš©í•´ì„œ ë¸”ë¡œê·¸ë¥¼ ë§Œë“¤ê¸°ì—ëŠ” ë„ˆë¬´ íž˜ë“¤ê¸° ë•Œë¬¸ì— blog templateì„ ë§Œë“¤ì–´ì£¼ëŠ” ê²ƒ
+* ê·¸ê±¸ ê°€ì ¸ë‹¤ê°€ ê·¸ ì•ˆì— ë¸”ë¡œê·¸ì— ëŒ€í•œ ë‚´ìš© í¬ìŠ¤íŒ…ì„ í•˜ê³ , jekyllì„ í™œìš©í•´ì„œ compileí•˜ëŠ” ê³¼ì •
+* ì´ ê³¼ì •ì„ ê±°ì¹˜ë©´ ë‚´ê°€ ìš´ì˜í•  ìˆ˜ ìžˆëŠ”  ë¸”ë¡œê·¸ì— ëŒ€í•œ  css. html, JS íŒŒì¼ì´ ë‚˜ì˜¤ê²Œ ë¨
 
-* ¾ÖÃÊ¿¡ css, html, JS È°¿ëÇØ¼­ ºí·Î±×¸¦ ¸¸µé±â¿¡´Â ³Ê¹« Èûµé±â ¶§¹®¿¡ blog templateÀ» ¸¸µé¾îÁØ´Ù.
-* ±×°É °¡Á®´Ù°¡  °Å±â ¾È¿¡ ºí·Î±×¿¡ ´ëÇÑ ³»¿ë Æ÷½ºÆÃÀ» ÇÏ°í, jekyllÀ» È°¿ëÇØ¼­ compileÇÏ°Ô µÈ´Ù.
-* ±×·¯¸é ³»°¡ ¿î¿µÇÒ ¼ö ÀÖ´Â  ºí·Î±×¿¡ ´ëÇÑ  css. html, JS ÆÄÀÏÀÌ ³ª¿À°Ô µÈ´Ù. 
-
-* Github ÆäÀÌÁö¿¡ ºí·Î±×¸¦ ¹Ù·Î ¿Ã¸± ¼ö ¾ø°í, °ÅÃÄ¾ß ÇÏ´Â ´Ü°èµéÀÌ ÀÖ´Ù. 
-* ±âº»ÀûÀ¸·Î ³» ÄÄÇ»ÅÍ¿¡ ±âº»Àû ºí·Î±× »ý¼ºÇÏ´Â ¹æ¹ýÀ» ÀÌ¿ëÇÏ°í, Ä¿½ºÅÍ¸¶ÀÌÂ¡ ÇÏ°í, ¸¸µé¾îÁø ºí·Î±×¸¦ Github¿¡ ¿Ã¸®´Â ´Ü°è·Î ÁøÇàÇÒ °Í
+* Github íŽ˜ì´ì§€ì— ë¸”ë¡œê·¸ë¥¼ ë°”ë¡œ ì˜¬ë¦´ ìˆ˜ ì—†ê³ , ê±°ì³ì•¼ í•˜ëŠ” ë‹¨ê³„ë“¤ì´ ìžˆë‹¤. 
+* ê¸°ë³¸ì ìœ¼ë¡œ ë‚´ ì»´í“¨í„°ì— ê¸°ë³¸ì  ë¸”ë¡œê·¸ ìƒì„±í•˜ëŠ” ë°©ë²•ì„ ì´ìš©í•˜ê³ , ì»¤ìŠ¤í„°ë§ˆì´ì§• í•˜ê³ , ë§Œë“¤ì–´ì§„ ë¸”ë¡œê·¸ë¥¼ Githubì— ì˜¬ë¦¬ëŠ” ë‹¨ê³„ë¡œ ì§„í–‰í•  ê²ƒ
 
 ---
 
-1) È¯°æ¼³Á¤
+1) í™˜ê²½ì„¤ì •
 
-* Github ÆäÀÌÁö¿¡¼­ Jekyll·Î ±âº» ÇüÅÂ ºí·Î±× °³¼³Àº ¾î·ÆÁö ¾ÊÀ¸³ª Ä¿½ºÅÍ¸¶ÀÌÂ¡À» ÇØ¼­ »ç¿ëÇÏ·Á¸é ¾à°£ÀÇ Front End °³¹ß Áö½ÄÀÌ ÇÊ¿ä
+* Github íŽ˜ì´ì§€ì—ì„œ Jekyllë¡œ ê¸°ë³¸ í˜•íƒœ ë¸”ë¡œê·¸ ê°œì„¤ì€ ì–´ë µì§€ ì•Šìœ¼ë‚˜ ì»¤ìŠ¤í„°ë§ˆì´ì§•ì„ í•´ì„œ ì‚¬ìš©í•˜ë ¤ë©´ ì•½ê°„ì˜ Front End ê°œë°œ ì§€ì‹ì´ í•„ìš”
 
->> Jekyll Themes: ¸¶À½¿¡ µå´Â Å×¸¶ °Ë»ö(http://jekyllthemes.org/)
+> Jekyll Themes: ë§ˆìŒì— ë“œëŠ” í…Œë§ˆ ê²€ìƒ‰(http://jekyllthemes.org/)
 
-* ¿©±â¼­ Ã£Àº Å×¸¶¸¦ ±â¹ÝÀ¸·Î ºí·Î±×¸¦ ¸¸µé¾î³¾ °ÍÀÌ´Ù. Å×¸¶¿¡ µû¶ó »ý±è»õ³ª ±â´ÉÀÌ ´Þ¶óÁú ¼ö ÀÖ´Ù´Â Á¡À» °í·Á
+* ì—¬ê¸°ì„œ ì°¾ì€ í…Œë§ˆë¥¼ ê¸°ë°˜ìœ¼ë¡œ ë¸”ë¡œê·¸ë¥¼ ë§Œë“¤ì–´ë‚¼ ê²ƒì´ë‹¤. í…Œë§ˆì— ë”°ë¼ ìƒê¹€ìƒˆë‚˜ ê¸°ëŠ¥ì´ ë‹¬ë¼ì§ˆ ìˆ˜ ìžˆë‹¤ëŠ” ì ì„ ê³ ë ¤
 
-(0) ÄÄÇ»ÅÍ °èÁ¤ ID È®ÀÎ : ÇÑ±Û/¿µ¹®ÀÎÁö
+(0) ì»´í“¨í„° ê³„ì • ID í™•ì¸ : í•œê¸€/ì˜ë¬¸ì¸ì§€
 
-* »çÀÌÆ® »ý¼º±âÀÎ JekyllÀ» È°¿ëÇÏ·Á¸é Ruby°¡ ÀÖ¾î¾ß ÇÑ´Ù.(Ruby»ó¿¡¼­ JekyllÀÌ µ¹±â¿¡ Ruby ¼³Ä¡°¡ ÇÊ¿ä)
-* Ruby´Â ÇÑ±Û°ú Æ¯¼ö¹®ÀÚ È°¿ë¿¡ ¹®Á¦°¡ ÀÖ´Ù. µû¶ó¼­ ÄÄÇ»ÅÍ °èÁ¤ ¾ÆÀÌµð°¡ ÇÑ±Û·Î µÇ¾îÀÖ´ÂÁöºÎÅÍ Ã¼Å©ÇØ¾ß!
+* ì‚¬ì´íŠ¸ ìƒì„±ê¸°ì¸ Jekyllì„ í™œìš©í•˜ë ¤ë©´ Rubyê°€ ìžˆì–´ì•¼ í•œë‹¤.(Rubyìƒì—ì„œ Jekyllì´ ëŒê¸°ì— Ruby ì„¤ì¹˜ê°€ í•„ìš”)
+* RubyëŠ” í•œê¸€ê³¼ íŠ¹ìˆ˜ë¬¸ìž í™œìš©ì— ë¬¸ì œê°€ ìžˆë‹¤. ë”°ë¼ì„œ ì»´í“¨í„° ê³„ì • ì•„ì´ë””ê°€ í•œê¸€ë¡œ ë˜ì–´ìžˆëŠ”ì§€ë¶€í„° ì²´í¬í•´ì•¼!
 
-(1) Ruby ¼³Ä¡: '=>' Ç¥½ÃµÇ¾îÀÖ´Â ¹öÀüÀ» ¼³Ä¡(https://rubyinstaller.org/downloads/)
+(1) Ruby ì„¤ì¹˜: '=>' í‘œì‹œë˜ì–´ìžˆëŠ” ë²„ì „ì„ ì„¤ì¹˜(https://rubyinstaller.org/downloads/)
 
-* Ruby ³»¿¡¼­ bundler¸¦ ¼³Ä¡ÇØ¾ß ÇÑ´Ù. ÀÌ¸¦ ¼³Ä¡ÇØ¾ß ¿ì¸®°¡ JekyllÀ» ½ÇÇàÇÒ ¼ö ÀÖ´Ù.)
-* bundler·Î JekyllÀ» ½ÇÇàÇØ¼­ JekyllÀÌ ºí·Î±×¸¦ ¸¸µé¾îÁÖ´Â °ÍÀÌ ½ÇÇà °úÁ¤ÀÌ´Ù.
-* °ËÀº»ö È­¸éÀÌ ¶ß¸é 1 ÀÔ·Â ÈÄ Enter ´©¸£±â -> ÀÌÈÄ È­¸é ¿òÁ÷ÀÓÀÌ ³¡³ª¸é enter·Î ³¡³»±â
+* Ruby ë‚´ì—ì„œ bundlerë¥¼ ì„¤ì¹˜í•´ì•¼ í•œë‹¤. ì´ë¥¼ ì„¤ì¹˜í•´ì•¼ ìš°ë¦¬ê°€ Jekyllì„ ì‹¤í–‰í•  ìˆ˜ ìžˆë‹¤.)
+* bundlerë¡œ Jekyllì„ ì‹¤í–‰í•´ì„œ Jekyllì´ ë¸”ë¡œê·¸ë¥¼ ë§Œë“¤ì–´ì£¼ëŠ” ê²ƒì´ ì‹¤í–‰ ê³¼ì •ì´ë‹¤.
+* ê²€ì€ìƒ‰ í™”ë©´ì´ ëœ¨ë©´ 1 ìž…ë ¥ í›„ Enter ëˆ„ë¥´ê¸° -> ì´í›„ í™”ë©´ ì›€ì§ìž„ì´ ëë‚˜ë©´ enterë¡œ ëë‚´ê¸°
 
 
 
