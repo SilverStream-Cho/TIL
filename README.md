@@ -111,6 +111,21 @@ bundle exee jekyll serve
 - 일단 임시로 깃헙 메인 페이지 꾸며놓고 html, css 학습하는 과정에서 웹페이지를 만들어보는 작업을 먼저 진행해보자.
 - 나중에 잊지 말고 이 홈페이지는 다시 해결방법 찾아서 건드려볼 것
 
+### solution(2023. 04. 23.)
+- 블로그 작업을 하다가 로컬 컴퓨터에 내보내서 확인하는 걸 모르겠어서 다시 이 영상을 참고해 적용해보려고 했다.
+- 그런데 이번에는 확인한게 'exee'가 유투브 업로드 상에서 오타여서 'exec'로 쳐야했다는 것을 깨달았다.
+- 쳐보니 문제점을 발견했다. 내가 gemfile이 없다고 뜨는 것이다. 
+- jekyll을 사용하는 방법에 대해서 처음부터 다시 서칭해보기 시작했다. 그러다 다음과 같은 페이지를 발견했다. https://jekyllrb.com/docs/installation/
+- 하나씩 버전을 확인해보니 gcc가 없다는 것을 발견. window상에서는 제대로 다시 깔아주어야 한다고 한다. [참고한 블로그](https://ddmanager.tistory.com/152)
+- make 설치 루트를 찾다가 이 방법을 발견해서 해결(https://velog.io/@dd9s2/Github.io-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-Jekyll-%EC%84%A4%EC%B9%98-Windows)
+ ### extra problem
+```
+C:\tilblogmaker\SilverStream>bundle exec jekyll serve
+Could not find gem 'wdm (~> 0.1.1) mingw, x64_mingw, mswin' in locally installed gems.
+Run `bundle install` to install missing gems.
+```
+- [참고블로그](https://ogaeng.com/jekyll-blog-install/)에서 얻은 정보대로 다시 폴더를 하나 생성해보고 그 아래에 실행해보니 이번엔 다른 오류 메시지가 나왔다.
+- bundle install을 다시 입력해서 실행시키니 작동이 된다. 다시 exec를 실행해보자.
 
 # TIL 2023. 04. 23.
 - 어제 저녁부터 TIL 깔끔하게 올릴만한 기술블로그를 만들어보고 싶어서 이것저것 찾아보다가
